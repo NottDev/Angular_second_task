@@ -1,0 +1,19 @@
+<div class="fullwidth">
+    <div class="container">
+        <h1>
+            VentaFacil
+        </h1>
+    </div>
+</div>
+
+<div class="categories" width = "250">
+    <h1>Here you'll found the categories to look for products</h1>
+</div>
+
+<section>
+    <div class="catalog_container" width = "1100">
+        <div *ngFor="let product of products">
+            <app-product [product]="product"></app-product>
+        </div>
+    </div>
+</section>
